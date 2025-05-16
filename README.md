@@ -66,11 +66,7 @@ To forecast weekly sales at a store level, the project implements the **Seasonal
 
 ### **Model Configuration:**
 
-`SARIMAX(  
-    endog=df_boxcox,  
-    order=(1, 0, 1),                 # ARIMA(p,d,q) 
-    seasonal_order=(1, 0, 1, 52)     # Seasonal order with 52-week cycle  
-)`
+<pre> ```python SARIMAX( endog=df_boxcox, order=(1, 0, 1), # ARIMA(p,d,q) seasonal_order=(1, 0, 1, 52) # Seasonal order with 52-week cycle ) ``` </pre>
 
 * **ARIMA Parameters (p,d,q)**:
 
